@@ -1,0 +1,166 @@
+style{
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap');
+}
+*{
+    font-family: 'Bitter', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* sharred styles */
+
+.btn-primary{
+  background-color: rgb(231, 67, 67);
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 500px;
+  border: 0px;
+  border-radius: 10px;
+  cursor: grab;
+  color: aliceblue;
+}
+.text-color-gray{
+  font-size: 1.25rem;
+  font-weight: 400px;
+  color: #727272;
+}
+
+
+/* header style */
+.header{
+  background-color:rgba(220, 202, 202, 0.59) ;
+  padding: 20px 100px;
+}
+.nav{
+  display: flex;
+  margin: 20px ;
+  justify-content: space-around;
+}
+.nav-title{
+  font-size: 2rem;
+  font-weight: 600px;
+}
+.nav ul{
+  display: flex;
+  align-items: center;
+
+}
+ul> li{
+  margin-right: 20px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+/* banner styles */
+.banner-content{
+  margin: 0px auto;
+  max-width: 800px;
+  
+}
+.banner-details{
+  text-align: center;
+}
+.banner-title{
+  font-size: 3rem;
+  font-weight: 700px;
+}
+
+.banner-img{
+  width: 100%;
+  margin-top: 20px;
+}
+/* feature styles */
+.team-container{
+  display: flex;
+  margin: 10px 100px;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+.feature-img-container{
+ display: grid;
+ grid-template-columns: repeat(2, 2fr);
+ gap: 10px;
+}
+.team-img{
+  width: 100%;
+}
+.feature-content{
+  margin: 50px;
+  padding: 20px;
+}
+.feature-title{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.special{
+  color: salmon;
+}
+
+
+
+
+
+/* media quary for mobile device started */
+
+@media  screen and (max-width: 576px) {
+  .header{
+    font-size: small;
+    margin: auto;
+    padding: 20px;
+    
+    
+  }
+  .nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav ul{
+    flex-direction: column;
+  }
+  ul>li{
+    
+    font-size: 1rem;
+    margin: auto 5px;
+    padding: 10px;
+  }
+  .banner-content{
+    margin: 0 auto;
+    text-align: center;
+    max-width: none;
+
+  }
+  .banner-title{
+    font-size: 2rem;
+  }
+  .banner-discribe{
+    
+    font-size: .8rem;
+  }
+  .team-container{
+    flex-direction: column ;
+  }
+  .feature-img-container{
+    grid-template-columns: 1fr;
+
+  }
+  .feature-content{
+    margin: 5px;
+    padding: 5px;
+  }
+  .feature-title{
+    font-size: 1.5rem;
+  }
+}
+/* media quary for medium devices */
+@media screen and (min-width: 577px) and (max-width: 999px) {
+  .nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-container{
+    flex-direction: column ;
+  }
+  
+}
+
